@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Form</title>
+</head>
+<body>
+  <form method="post"> 
+    <div id="name"> 
+      <label for="name"> Name </label> <br>
+      <input type="text" name="name" required placeholder="John Doe" autocapitalize="words"/>
+    </div> 
+    <div id="age"> 
+      <legend> Age </legend>
+      <label> <input type="radio"/> <18 </label> <br>
+      <label> <input type="radio"/> 19-35 </label> <br>
+      <label> <input type="radio"/> 36-48 </label> <br>
+      <label> <input type="radio"/> 49> </label> <br>
+    </div> 
+    <div id="profession"> 
+      <label for="profession"> Profession </label> <br>
+      <input type="text" name="profession" required />
+    </div> 
+    <div id="country">
+      <label for="country"> Country </label> <br>
+      <select name="country" required>
+        <option selected> Choose a country... </option>
+        <option> Brazil </option>
+        <option> Argentina </option>
+        <option> Colombia </option>
+        <option> Chile </option>
+      </select>
+    </div>
+    <div id="interests">
+      <label for="interests"> Mark your main music interests </label> <br>
+      <label> <input type="checkbox"> Metal </label> <br>
+      <label> <input type="checkbox"> Rock </label> <br>
+      <label> <input type="checkbox"> Pop </label> <br>
+      <label> <input type="checkbox"> Hip Hop </label> <br>
+      <label> <input type="checkbox"> Jazz </label> <br>
+      <label> <input type="checkbox"> Blues </label> <br>
+      <label> <input type="checkbox"> Reggae </label> <br>
+      <label> <input type="checkbox"> Country </label> <br>
+      <label> <input type="checkbox"> Electronic </label> <br>
+      <label> <input type="checkbox"> Folk </label> <br>
+      <label> <input type="checkbox"> Classical </label> <br>
+      <label> <input type="checkbox"> R&B </label> <br>
+    </div>
+
+    <div id="feedback">
+      <label for="feedback"> How did you find this website? </label> <br>
+      <textarea cols="70" rows="10" name="feedback" placeholder="Instagram, Twitter, E-mail, ..."> </textarea>
+    </div>
+
+    <button type="submit"> Send </button>
+  </form>
+</body>
+</html> 

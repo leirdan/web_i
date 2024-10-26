@@ -1,0 +1,47 @@
+\subsection{Descreva todos os tipos de seletores do CSS. Quais são as diferenças entre eles?}
+Os seletores no CSS indicam ao navegador quais elementos HTML serão escolhidos para ter seus estilos modificados pelos valores informados pelos seletores. \\
+Existem alguns tipos disponíveis para utilizar:
+\begin{itemize}
+  \item \textbf{de Tipo}: selecionam elementos HTML diretamente. É escrito como:
+  \begin{verbatim}
+    // 'div' é o elemento selecionado 
+    div { 
+      margin: "2rem";
+    }
+  \end{verbatim}
+  \item \textbf{de Classe}: selecionam elementos HTML que contém valores específicos no atributo $class$. É escrito como:
+  \begin{verbatim}
+    // elementos com "class='header'" serão selecionados
+    .header { 
+      display: "flex";
+    }
+  \end{verbatim}
+  \item \textbf{de Id}: seleciona um elemento HTML que contém um valor específico para o atributo $id$. É escrito como:
+  \begin{verbatim}
+    // o elemento com "id='logo'" será selecionado 
+    #logo { 
+      color: "blue"; 
+    }
+  \end{verbatim}
+  \item \textbf{de Atributo}: seleciona somente elementos que contém valores atributos específicos. É escrito como:
+  \begin{verbatim}
+    // os inputs de tipo textual serão selecionados
+    input[type="text"] { 
+      border: none;
+    }
+  \end{verbatim}
+  \item \textbf{de Pseudoclasses}: seleciona elementos que estão em um determinado estado naquele instante. É escrito como:
+  \begin{verbatim}
+    // quando o ponteiro do mouse passar por cima do botão (hover), esse estilo será aplicado
+    button:hover { 
+      color: "gray"
+    }
+  \end{verbatim}
+  \item \textbf{de Combinadores}: seleciona elementos de outras formas não contempladas acima e misturando os seletores, como elementos filhos de outros, elementos com um tipo e classe específicas, e outros.
+  \begin{verbatim}
+    // elementos "li" que são filhos diretos de uma div com classe main serão selecionados
+    div.main > li { 
+      font-size: 12
+    }
+  \end{verbatim}
+\end{itemize}

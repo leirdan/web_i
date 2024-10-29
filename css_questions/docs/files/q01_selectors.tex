@@ -1,4 +1,4 @@
-\subsection{Descreva todos os tipos de seletores do CSS. Quais são as diferenças entre eles?}
+\section{Descreva todos os tipos de seletores do CSS. Quais são as diferenças entre eles?}
 Os seletores no CSS indicam ao navegador quais elementos HTML serão escolhidos para ter seus estilos modificados pelos valores informados pelos seletores. \\
 Existem alguns tipos disponíveis para utilizar:
 \begin{itemize}
@@ -32,14 +32,16 @@ Existem alguns tipos disponíveis para utilizar:
   \end{verbatim}
   \item \textbf{de Pseudoclasses}: seleciona elementos que estão em um determinado estado naquele instante. É escrito como:
   \begin{verbatim}
-    // quando o ponteiro do mouse passar por cima do botão (hover), esse estilo será aplicado
+    // quando o ponteiro do mouse passar por cima do botão (hover), 
+    // esse estilo será aplicado
     button:hover { 
       color: "gray"
     }
   \end{verbatim}
   \item \textbf{de Combinadores}: seleciona elementos de outras formas não contempladas acima e misturando os seletores, como elementos filhos de outros, elementos com um tipo e classe específicas, e outros.
   \begin{verbatim}
-    // elementos "li" que são filhos diretos de uma div com classe main serão selecionados
+    // elementos "li" que são filhos diretos de uma div 
+    // com classe main serão selecionados
     div.main > li { 
       font-size: 12
     }

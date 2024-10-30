@@ -1,0 +1,17 @@
+\section{O que é o box model no CSS?}
+\texttt{Box model} refere-se ao espaço retangular ocupado por um elemento em tela. Este espaço é sub-dividido em 4 áreas:
+\begin{itemize}
+  \item \texttt{Content area}: área ocupada pelo conteúdo real do elemento, tendo como dimensões a largura do conteúdo (ou do box do conteúdo) e a altura do conteúdo (ou do box do conteúdo).
+  \item \texttt{Padding area}: refere-se à área entre a borda e o conteúdo, tendo como dimensões a largura e altura do \texttt{padding box}.
+  \item \texttt{Border area}: área que contém as bordas do conteúdo, tendo como dimensões a largura e altura do \texttt{border box}.
+  \item \texttt{Margin area}: área que estende a \texttt{border area} com um espaço vazio, essencial pra separar o elemento dos outros. Tem como dimensões a largura e altura do \texttt{margin box}.
+\end{itemize}
+
+Existem algumas propriedades úteis para manipular o box model, como:
+\begin{itemize}
+  \item \texttt{width}: especifica a largura do \texttt{content area}. Variações incluem \texttt{max-width}, \texttt{min-width};
+  \item \texttt{height}: especifica a altura do \texttt{content area}. Variações incluem \texttt{max-height}, \texttt{min-height};
+  \item \texttt{margin}: especifica o espaço em todas as direções de um elemento ao próximo. Quanto maior o valor, maior o espaçamento. Existem propriedades específicas como \texttt{margin -top} que permitem alterar somente a margem em uma direção;
+  \item \texttt{padding}: especifica o espaço em todas as direções entre a borda e o conteúdo. Quanto maior o valor, maior o espaçamento. Existem propriedades específicas como \texttt{padding-top} que permitem alterar somente o espaço em uma direção;
+  \item \texttt{border}: define os atributos da borda do conteúdo. Dentre eles, está a \texttt{width} da área de borda: quanto maior o valor, maior o espaçamento.
+\end{itemize}

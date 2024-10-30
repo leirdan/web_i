@@ -1,2 +1,10 @@
 \section{Qual a ordem de prioridade entre os seletores?}
-A 
+A ordem de prioridade é determinada por fatores como especificidade, cascada, ordem de declaração e outros. Contudo, considerando somente os seletores, temos a seguinte ordem, do mais específico ao menos específico:
+\begin{enumerate}
+  \item Seletor de Id;
+  \item Seletores de classe, atributos e pseudo-classes;
+  \item Seletor de tipo;
+  \item Seletor universal.
+\end{enumerate}
+
+Ou seja, de modo geral, a regra mais específica e próxima ao elemento será aplicada.

@@ -1,0 +1,24 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  min-width: 3rem;
+  max-width: 9rem;
+  min-height: 3rem;
+  border: 1px solid black;
+}
+
+.box:nth-child(odd) {
+  background-color: beige;
+}
+
+.box:nth-child(even) {
+  background-color: saddlebrown;
+}

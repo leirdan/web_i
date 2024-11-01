@@ -4,21 +4,24 @@ body {
   font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 1em;
   margin: 0;
+}
+
+#table {
+  border: 2px solid black;
+  max-width: fit-content;
+}
+.row {
   display: flex;
-  flex-direction: row;
 }
 
 .box {
   min-width: 3rem;
   max-width: 9rem;
   min-height: 3rem;
-  border: 1px solid black;
+  background-color: burlywood;
 }
 
-.box:nth-child(odd) {
-  background-color: beige;
-}
-
-.box:nth-child(even) {
+.row:nth-child(odd) .box:nth-child(even),
+.row:nth-child(even) .box:nth-child(odd) {
   background-color: saddlebrown;
 }

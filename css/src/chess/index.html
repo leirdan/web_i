@@ -7,42 +7,87 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main id="table"></main>
+    <main id="table">
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </main>
   </body>
-
-  <script>
-    const addBoxes = (parent, max) => {
-      let copy;
-      let box = document.createElement("div");
-      box.className = "box";
-      let gap = document.createElement("div");
-      gap.className = "gap";
-      gap.appendChild(document.createElement("br"));
-      for (let i = 0; i <= max; i++) {
-        if (i % 8 == 0) {
-          document.body.appendChild(gap.cloneNode(true));
-        } else {
-          document.body.appendChild(box.cloneNode());
-        }
-        /*
-        if (i % 8 == 0) {
-          copy = gap.cloneNode(true);
-          gap.parentNode.insertBefore(copy, gap);
-          continue;
-        }
-        copy = parent.cloneNode(true);
-        parent.parentNode.insertBefore(copy, parent);
-        */
-      }
-    };
-
-    window.onload(
-      addBoxes(
-        document.getElementById("table"),
-        //        document.getElementsByClassName("box")[0],
-        // document.getElementsByClassName("gap")[0],
-        64
-      )
-    );
-  </script>
 </html>

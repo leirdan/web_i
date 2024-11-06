@@ -1,0 +1,7 @@
+\section{Explique a diferença entre px, pt, em, rem (não a banda)}
+
+A princípio, é importante notar que o CSS permite diversos tipos de unidades de tamanho. É aceitável utilizar tanto unidades absolutas, como centímetros e pixels, quanto unidades relativas, como o \texttt{em}. Porém, há um bom motivo para preferir o uso de unidades relativas: não é garantido que as unidades absolutas reflitam na tela as mesmas dimensões no espaço físico devido à variação da DPI (densidade de pixels por tela) em diferentes dispositivos; ou seja, um aplicativo em um iPhone pode ter uma fonte de tamanho drasticamente diferente de um aplicativo em TV. \\
+
+Algumas unidades absolutas ainda são úteis, entretanto. A unidade \texttt{px} determina um valor diretamente medido em uma tela independente de seu tamanho fixo, sendo amplamente adotada; outra unidade comum é a \texttt{pt} que representa pontos, $\frac{1}{72}$ de uma polegada. \\
+
+As unidades relativas levam este nome devido aos seus valores serem baseados em configurações da página. São preferíveis em relação às absolutas por geralmente usarem o tamanho padrão dos dispositivos onde são aplicadas. A unidade \texttt{em}, por exemplo, tem seu valor baseado no tamanho da tipografia no elemento em questão; se um elemento "p" tem \texttt{font-size = 20px}, quando o \texttt{em} for aplicado no elemento ele terá valor de "20px". Similarmente, a unidade \texttt{rem} tem seu valor baseado no tamanho da tipografia no geral, na raíz do HTML, sendo assim um valor constante para todos os elementos.

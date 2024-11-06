@@ -1,10 +1,12 @@
 \section{Qual a ordem de prioridade entre os seletores?}
-A ordem de prioridade é determinada por fatores como especificidade, cascada, ordem de declaração e outros. Contudo, considerando somente os seletores, temos a seguinte ordem, do mais específico ao menos específico:
+A ordem de prioridade é determinada por fatores como especificidade, cascada, ordem de declaração e outros. Considerando somente os seletores, temos a seguinte ordem, do mais específico ao menos específico:
 \begin{enumerate}
   \item Seletor de Id;
   \item Seletores de classe, atributos e pseudo-classes;
   \item Seletor de tipo;
   \item Seletor universal.
 \end{enumerate}
+
+Como comentado, a ordem de declaração importa, onde as instruções declaradas mais ao final do arquivo tem mais importância que as localizadas mais ao começo. Além disso, as instruções \textit{inline} têm mais prioridade que o CSS interno, que têm mais prioridade que o CSS externo. Por fim, é possível ignorar as regras descritas e impôr a prioridade a uma instrução por meio da palavra-chave \texttt{!important}.
 
 Ou seja, de modo geral, a regra mais específica e próxima ao elemento será aplicada.

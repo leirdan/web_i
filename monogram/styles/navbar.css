@@ -1,0 +1,79 @@
+@import "variables.css";
+
+/* Define as propriedades da navbar, como a direção dos elementos e cores. */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.navbar #container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--pink);
+}
+
+.navbar .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar #container-title img {
+  width: 2em;
+  height: 2em;
+  background-color: var(--pink);
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: 1rem;
+}
+
+.navbar #container-options {
+  display: flex;
+}
+
+.navbar #container-options > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+.navbar #container-options {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.navbar #container-options li {
+  list-style: none;
+  color: var(--pink);
+  margin-right: 3rem;
+}
+
+.navbar #container-options li:nth-child(5) {
+  font-weight: bold;
+}
+
+.navbar #container-options span {
+  display: flex;
+  gap: 10px;
+  color: var(--pink);
+}
+
+.navbar #container-options img {
+  width: 2em;
+  height: 2em;
+  background-color: var(--pink);
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 3px;
+}

@@ -1,0 +1,11 @@
+@import "navbar.css";
+@import "presentation.css";
+
+/* Define as dimensões da header. */
+.header {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../assets/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

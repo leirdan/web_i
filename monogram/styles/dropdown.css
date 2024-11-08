@@ -1,0 +1,49 @@
+@import "variables.css";
+
+/* Estiliza os dropdowns presentes. */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display: flex;
+}
+
+.dropdown .dropdown-btn {
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-options {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  min-width: 10rem;
+  z-index: 1;
+  color: var(--black);
+  right: 1rem;
+  margin-top: 3rem;
+
+  /* Os estilos flex não serão aplicados na hora, somente na exibição da lista (i.e, quando o hover no dropdown ocorrer). */
+  flex-direction: column;
+}
+
+.dropdown .dropdown-options a {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.dropdown .dropdown-options a:hover {
+  background-color: #cecece;
+}
+
+/* Devido à utilização restrita do HTML e CSS, Javascript não foi utilizado para exibir as opções no clique do botão. 
+Logo, a alternativa foi exibi-los ao passar o mouse por cima. */
+
+.dropdown:hover .dropdown-options,
+.dropdown:hover {
+  display: flex;
+}

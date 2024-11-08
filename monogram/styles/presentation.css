@@ -1,0 +1,23 @@
+@import "variables.css";
+
+/* Define a seção de apresentação da página logo abaixo da barra de navegação. */
+
+.presentation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.presentation .presentation-title {
+  text-align: center;
+  letter-spacing: 1.1px;
+  color: var(--pink);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.presentation .presentation-desc {
+  color: var(--pink);
+  font-weight: 300;
+  margin-top: -0.6rem;
+}

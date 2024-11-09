@@ -1,0 +1,89 @@
+@import "common.css";
+@import "variables.css";
+
+.cards {
+  padding: 2rem 0;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Aplicando responsividade na área de cards. */
+@media only screen and (min-width: 1200px) {
+  .cards {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width < 1200px) {
+  .cards {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width < 992px) {
+  .cards {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width < 768px) {
+  .cards {
+    max-width: 540px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25rem;
+  flex-grow: 1;
+  max-width: 35rem;
+  box-sizing: border-box;
+}
+
+.card-img {
+  align-self: center;
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.card .card-title {
+  width: 100%;
+  align-self: center;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card .card-title .card-text {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: var(--blue);
+  margin-top: 3px;
+  width: 90%;
+}
+
+.card .card-title .card-price {
+  color: var(--blue);
+  margin-top: 3px;
+  font-weight: 200;
+  min-width: 10%;
+}
+
+.card .card-title .card-description {
+  margin-top: -5px;
+  font-size: 0.8rem;
+  color: var(--blue);
+  font-weight: 300;
+}

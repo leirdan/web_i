@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+#modules {
+  gap: 2.2rem !important;
+}
+
 /* Aplicando responsividade na área de cards. */
 @media only screen and (min-width: 1200px) {
   .cards {
@@ -47,10 +51,18 @@
   box-sizing: border-box;
 }
 
+/* Para a seção de módulos dos produtos, os cards são alinhados 3 a 3, então a largura é menor. */
+#modules .card {
+  justify-content: start;
+  max-width: 20rem;
+  min-height: 395px;
+}
+
 .card-img {
   align-self: center;
   object-fit: cover;
   height: 20rem;
+  max-height: 20rem;
   width: 100%;
   max-width: 30rem;
 }
@@ -71,7 +83,8 @@
   font-weight: 500;
   color: var(--blue);
   margin-top: 3px;
-  width: 90%;
+  width: 80%;
+  text-transform: uppercase;
 }
 
 .card .card-title .card-price {

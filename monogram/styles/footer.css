@@ -1,0 +1,77 @@
+@import "variables.css";
+
+.footer {
+  max-width: 100vw;
+  background-color: var(--blue);
+  height: 300px;
+  font-size: 13px;
+}
+
+.footer .footer-container {
+  padding-top: 40px;
+  min-width: 80vw;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 0 auto;
+}
+
+.footer .footer-info {
+  display: flex;
+  gap: 70px;
+  min-width: 50vw;
+  justify-content: space-around;
+}
+
+.footer-info .footer-block h3,
+.footer-subscription .subscription-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  color: var(--pink);
+}
+
+.footer-info .footer-block p {
+  color: var(--pink);
+  font-weight: 300;
+  line-height: 8px;
+}
+
+.footer-subscription .subscription-desc {
+  font-weight: 300;
+  word-wrap: normal;
+  max-width: 316.5px;
+  color: var(--pink);
+}
+
+.footer-subscription > p {
+  color: var(--pink);
+  font-weight: 300;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: start;
+}
+
+.subscription-form #input-subscription {
+  padding: 8px 5px;
+  border: 2px solid var(--pink);
+  outline: none;
+  background-color: var(--blue);
+}
+::placeholder {
+  color: var(--gray);
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.subscription-form #submit-subscription {
+  padding: 8px 15px;
+  width: 110px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: var(--pink);
+  margin-left: 1rem;
+}

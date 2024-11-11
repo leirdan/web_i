@@ -3,7 +3,10 @@
 .divider {
   height: 34em;
   margin-top: 40px;
-  background-color: var(--gray);
+  background-image: url(/assets/divider-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .divider-title {

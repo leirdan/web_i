@@ -6,11 +6,13 @@
   flex-direction: row;
   justify-content: space-between;
   height: 4rem;
+  width: 97vw;
   padding-left: 3px;
   padding-right: 3px;
-  margin-right: 1rem;
+  margin-top: 0.8rem;
   background-color: var(--blue);
   color: var(--white);
+  position: fixed;
 }
 
 .navbar #container-title {

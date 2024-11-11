@@ -21,22 +21,7 @@
   justify-content: center;
   gap: 10px;
   color: var(--pink);
-}
-
-.navbar .title {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.navbar #container-title img {
-  width: 2em;
-  height: 2em;
-  background-color: var(--pink);
-  border-radius: 50%;
-  padding: 5px;
-  margin-top: 3px;
-  margin-left: 1rem;
+  padding-left: 0.7rem;
 }
 
 .navbar #container-options {

@@ -4,12 +4,12 @@
 /* Define as dimensões da header. */
 .header {
   width: 100vw;
-  height: 40rem;
+  height: 30rem;
   opacity: 1;
-  background-image: url("../assets/background-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/background-header.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: -50px;
   display: flex;
   flex-direction: column;
   justify-content: start;

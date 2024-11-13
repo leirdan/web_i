@@ -75,3 +75,15 @@
   background-color: var(--pink);
   margin-left: 1rem;
 }
+
+.footer-icons > img {
+  background: var(--pink);
+  width: 25px;
+  margin: 0.8rem 5px;
+  padding: 4px;
+  border-radius: 50px;
+}
+
+.footer .copyright {
+  margin-top: -0.5rem;
+}

@@ -1,6 +1,9 @@
 @import "variables.css";
 
-/* Define as propriedades da navbar, como a direção dos elementos e cores. */
+/* 
+ * Define as propriedades da navbar e seus componentes internos.
+ * 
+*/
 .navbar {
   display: flex;
   flex-direction: row;
@@ -15,12 +18,19 @@
   position: fixed;
 }
 
-.menu-logo {
+/*
+ * Coloca o ícone de "sanduíche" de mais opções da navbar como oculto
+ * Obs.: Este ícone está dentro da seção de usuário da navbar, mas é somente pela estilização herdada daquela seção, não porque é específico de cada usuário
+*/
+.navbar .more-icon {
   display: none;
 }
 
+/*
+ * Faz com que, em larguras de tela menores, não exiba todas as opções da navbar, somente o ícone "sanduíche"
+*/
 @media (max-width: 1056px) {
-  .menu-logo {
+  .navbar .more-icon {
     display: block;
   }
   .navbar-links {
@@ -28,6 +38,9 @@
   }
 }
 
+/*
+ * Propriedades da logo do Monogram
+*/
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -37,6 +50,9 @@
   padding-left: 0.7rem;
 }
 
+/*
+ * Propriedades da lista de ações da navbar
+*/
 .navbar-links {
   display: flex;
   font-size: 0.8rem;
@@ -57,10 +73,16 @@
   margin-right: 3rem;
 }
 
+/*
+ * Simula o efeito de selecionado na opção "Shop"
+*/
 .navbar-links li:nth-child(5) {
   font-weight: bold;
 }
 
+/*
+ * Propriedades da área de usuário, que são o ícone de sacola e as opções de moeda
+*/
 .navbar-user-info {
   display: flex;
   flex-direction: row;

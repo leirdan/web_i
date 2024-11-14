@@ -1,6 +1,8 @@
 @import "variables.css";
 
-/* Define a seção de apresentação da página logo abaixo da barra de navegação. */
+/* 
+ * Define a seção de "apresentação" da página na header, a parte mais chamativa dela para o usuário
+*/
 
 .presentation {
   display: flex;

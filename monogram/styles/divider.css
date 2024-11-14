@@ -1,5 +1,11 @@
 @import "variables.css";
 
+/*
+ * Define a estilização do divisor entre as seções de produtos.
+ * O divisor consiste em uma grande "div" com imagem de fundo, 
+ * um título e uma descrição que "flutuam" sobre ele. 
+*/
+
 .divider {
   height: 34em;
   margin-top: 40px;
@@ -23,6 +29,6 @@
   color: var(--blue);
   font-size: 1.1rem;
   text-align: center;
-  margin-top: -1.01rem;
+  margin-top: -1.01rem; /* Necessário para deixar o título e descrição mais próximos */
   font-weight: 300;
 }

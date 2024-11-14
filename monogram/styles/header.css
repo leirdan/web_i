@@ -1,7 +1,11 @@
 @import "navbar.css";
 @import "presentation.css";
 
-/* Define as dimensões da header. */
+/* 
+ * Define as dimensões da header, 
+ * a ordenação dos elementos de forma interna (centralizada) e 
+ * a imagem de background, onde é aplicado um efeito de "sombreamento" por cima da imagem original.
+ */
 .header {
   width: 100vw;
   height: 30rem;

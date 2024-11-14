@@ -1,3 +1,9 @@
+/*
+ * Define as classes padrão que podem ser usadas em diversas ocasiões.
+ * São elas:
+  * .container: aplica uma margem lateral de modo a "centralizar" mais a seção.
+ */
+
 .container {
   margin-left: 5vw;
   margin-right: 5vw;

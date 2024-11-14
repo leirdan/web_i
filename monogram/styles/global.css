@@ -1,8 +1,15 @@
+@import "variables.css";
+
+/*
+ * Define as propriedades globais do documento.
+*/
+
 html {
   font-family: "Prompt", sans-serif;
 }
-/* Elimina as margens do documento. */
+
 body {
   margin: 0;
   font-size: 14px;
+  background-color: var(--white);
 }

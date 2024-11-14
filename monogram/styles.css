@@ -5,3 +5,10 @@
 @import "styles/cards.css";
 @import "styles/divider.css";
 @import "styles/footer.css";
+
+/*
+ * Arquivo de configuração padrão dos estilos do site.
+ * Os arquivos foram modularizados de forma a melhorar a
+ * manutenabilidade do código.
+ * Afinal, seriam muitas linhas de CSS em um arquivo só.
+*/

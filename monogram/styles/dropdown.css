@@ -1,6 +1,9 @@
 @import "variables.css";
 
-/* Estiliza os dropdowns presentes. */
+/* 
+ * Estiliza os dropdowns de toda a página, 
+ * especificando que devem começar a flutuar à esquerda do elemento.
+ */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -11,6 +14,10 @@
   letter-spacing: 2px;
   border: none;
   outline: none;
+  /* 
+  * Estes inherit são necessários pra mudar o estilo padrão do botão
+  * seguindo o estilo dos pais. 
+  */
   color: inherit;
   background-color: inherit;
   font-family: inherit;
@@ -22,12 +29,15 @@
   position: absolute;
   background-color: var(--white);
   min-width: 10rem;
-  z-index: 1;
+  z-index: 1; /* Usado para determinar que o elemento deve se sobrepôr aos outros. */
   color: var(--black);
   right: 1rem;
   margin-top: 3rem;
 
-  /* Os estilos flex não serão aplicados na hora, somente na exibição da lista (i.e, quando o hover no dropdown ocorrer). */
+  /* 
+  * Os estilos flex não serão aplicados na hora (já que o display padrão é none), 
+  * somente na exibição da lista (i.e, quando o hover no dropdown ocorrer e o display virar flex). 
+  */
   flex-direction: column;
 }
 
@@ -40,8 +50,10 @@
   background-color: #cecece;
 }
 
-/* Devido à utilização restrita do HTML e CSS, Javascript não foi utilizado para exibir as opções no clique do botão. 
-Logo, a alternativa foi exibi-los ao passar o mouse por cima. */
+/* 
+ * Devido à utilização restrita do HTML e CSS, 
+ * o Javascript não foi utilizado para exibir as opções no clique do botão. 
+ * Logo, a alternativa foi exibi-los ao passar o mouse por cima. */
 
 .dropdown:hover .dropdown-options,
 .dropdown:hover {

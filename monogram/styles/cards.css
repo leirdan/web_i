@@ -1,5 +1,6 @@
 @import "common.css";
 @import "variables.css";
+@import "cards-hover.css";
 
 .cards {
   padding: 2rem 0;
@@ -58,13 +59,17 @@
   min-height: 395px;
 }
 
-.card-img {
+.card .card-img {
   align-self: center;
   object-fit: cover;
   height: 20rem;
   max-height: 20rem;
   width: 100%;
   max-width: 30rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1.5s ease;
 }
 
 .card .card-title {
@@ -75,6 +80,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+#last-card,
+#last-card .card-img,
+#last-card .card-title {
+  max-width: 65rem;
+  width: 100%;
 }
 
 .card .card-title .card-text {

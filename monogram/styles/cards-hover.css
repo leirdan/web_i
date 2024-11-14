@@ -1,0 +1,102 @@
+/* 
+ * Faz a troca das imagens dos cards quando o mouse passa por cima, simulando um efeito alcançável por Javascript.
+*/
+
+#main-products #card1 .card-img {
+  background-image: url("/assets/mini-console.webp");
+}
+#main-products #card1 .card-img:hover {
+  background-image: url("/assets/mini-console-hover.webp");
+}
+
+#main-products #card2 .card-img {
+  background-image: url("/assets/audio-console-1.webp");
+}
+#main-products #card2 .card-img:hover {
+  background-image: url("/assets/audio-console-hover.webp");
+}
+
+#main-products #card3 .card-img {
+  background-image: url("/assets/photo-console.webp");
+}
+#main-products #card3 .card-img:hover {
+  background-image: url("/assets/photo-console-hover.webp");
+}
+
+#main-products #card4 .card-img {
+  background-image: url("/assets/video-console.webp");
+}
+#main-products #card4 .card-img:hover {
+  background-image: url("/assets/video-console-hover.webp");
+}
+
+#main-products #last-card .card-img {
+  background-image: url("/assets/keyboard.webp");
+}
+#main-products #last-card .card-img:hover {
+  background-image: url("/assets/keyboard-hover.webp");
+}
+
+#modules #card1 .card-img {
+  background-image: url("/assets/keyboard-1.webp");
+}
+#modules #card1 .card-img:hover {
+  background-image: url("/assets/keyboard-1-hover.webp");
+}
+#modules #card2 .card-img {
+  background-image: url("/assets/multipad-1.webp");
+}
+#modules #card2 .card-img:hover {
+  background-image: url("/assets/multipad-1-hover.webp");
+}
+#modules #card3 .card-img {
+  background-image: url("/assets/core-1.webp");
+}
+#modules #card3 .card-img:hover {
+  background-image: url("/assets/core-1-hover.webp");
+}
+#modules #card4 .card-img {
+  background-image: url("/assets/slider-1.webp");
+}
+#modules #card4 .card-img:hover {
+  background-image: url("/assets/slider-1-hover.webp");
+}
+#modules #card5 .card-img {
+  background-image: url("/assets/orbiter-1.webp");
+}
+#modules #card5 .card-img:hover {
+  background-image: url("/assets/orbiter-1-hover.webp");
+}
+#modules #card6 .card-img {
+  background-image: url("/assets/essential-1.webp");
+}
+#modules #card6 .card-img:hover {
+  background-image: url("/assets/essential-1-hover.webp");
+}
+#modules #card7 .card-img {
+  background-image: url("/assets/dial-1.webp");
+}
+#modules #card7 .card-img:hover {
+  background-image: url("/assets/dial-1-hover.webp");
+}
+#modules #card8 .card-img {
+  background-image: url("/assets/carrying-case-1.webp");
+}
+#modules #card8 .card-img:hover {
+  background-image: url("/assets/carrying-case-1-hover.webp");
+}
+#modules #card9 .card-img {
+  background-image: url("/assets/console-pack-video.webp");
+}
+#modules #card10 .card-img {
+  background-image: url("/assets/console-pack-photo.webp");
+}
+#modules #card11 .card-img {
+  background-image: url("/assets/console-pack-audio.webp");
+}
+#modules #card12 .card-img {
+  background-image: url("/assets/care-1.webp");
+}
+#modules #card12 .card-img:hover {
+  background-image: url("/assets/care-1-hover.webp");
+}
